@@ -22,7 +22,7 @@ const githubAuth = async (req, res) => {
           Authorization: `token ${access_token}`
         }
       })
-      const user = user_data.data
+      const user = { ...user_data.data, access_token };
       res.send(user)
       return user;
     })

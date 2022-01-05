@@ -41,32 +41,44 @@ export const Main = () => {
   });
 
   return (
-    <div className='wrapper'>
-      <div className='menu'>
-        <p className='menuHomeBtn'>
-          <Link to='/home' className='menuHomeLink'> Home </Link>
+    <div className="wrapper">
+      <div className="menu">
+        <p className="menuHomeBtn">
+          <Link to="/home" className="menuHomeLink">
+            {' '}
+            Home{' '}
+          </Link>
         </p>
-        <p className='menuHomeBtn'>
-          <Link to='/repositories' className='menuHomeLink'> Repositories </Link>
+        <p className="menuHomeBtn">
+          <Link to="/repositories" className="menuHomeLink">
+            {' '}
+            Repositories{' '}
+          </Link>
+        </p>
+        <p className="menuHomeBtn">
+          <Link to="/find" className="menuHomeLink">
+            {' '}
+            Find{' '}
+          </Link>
         </p>
       </div>
-      <div className='profile'>
-        <img src={avatarUrl} className='profileImg' />
+      <div className="profile">
+        <img src={avatarUrl} className="profileImg" />
         <p> Welcome, {username} </p>
-        <div className='profileInfo'>
-          <div className='profileInfoText'> ID </div> <div> {user_id} </div>
+        <div className="profileInfo">
+          <div className="profileInfoText"> ID </div> <div> {user_id} </div>
         </div>
-        <div className='profileInfo'>
+        <div className="profileInfo">
           <div> Login </div> <div> @{login} </div>
         </div>
-        <div className='profileInfo'>
+        <div className="profileInfo">
           <div> Github page </div>{' '}
-          <a href={github_page} className='profileInfoLink'>
+          <a href={github_page} className="profileInfoLink">
             {' '}
             user in github{' '}
           </a>
         </div>
-        <div className='profileInfo'>
+        <div className="profileInfo">
           <div> Email </div> <div> {email} </div>
         </div>
       </div>
