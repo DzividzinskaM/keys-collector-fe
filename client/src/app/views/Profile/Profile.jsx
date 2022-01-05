@@ -8,10 +8,7 @@ export const Profile = () => {
       <div className='wrapper'>
         <div className='menu'>
           <p className='menuHomeBtn'>
-            <Link to='/home' className='menuHomeLink'>
-              {' '}
-              Home{' '}
-            </Link>
+            <Link to='/home' className='menuHomeLink'> Home{' '} </Link>
           </p>
           <p className='menuHomeBtn'>
             <Link to='/repositories' className='menuHomeLink'>
@@ -24,8 +21,7 @@ export const Profile = () => {
           <div className='connect'>
             <a
               className='connectLink'
-              href={`https://github.com/login/oauth/authorize?client_id=c4af08eee8ad81aa9485&redirect_uri=http://localhost:3000/home`}
-            >
+              href='https://github.com/login/oauth/authorize?client_id=c4af08eee8ad81aa9485&redirect_uri=http://localhost:3000/home'>
               auth with github
             </a>
           </div>

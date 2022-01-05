@@ -4,7 +4,7 @@ import { Home } from './app/views/Home/Home';
 import { Profile } from './app/views/Profile/Profile';
 import { Main } from './components/Main/Main';
 import { Repositories } from './components/Repositories/Repositories';
-import { FindForm } from './components/FindForm';
+import { FindForm } from './components/FindForm/FindForm';
 
 const App = () => {
   return (

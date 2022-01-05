@@ -24,6 +24,7 @@ export const Auth = () => {
         .then((response) => {
           const status = response.status;
           if (status === 201) {
+            console.log('TEST');
             setSignUp(true);
           }
         })
