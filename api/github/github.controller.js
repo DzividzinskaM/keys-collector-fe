@@ -14,7 +14,6 @@ const githubAuth = async (req, res) => {
     )
     .then( async (result) => {
       const token = result.data;
-      console.log('RESULT:', token);
       let params = new URLSearchParams(token);
       const access_token = params.get('access_token');
 
